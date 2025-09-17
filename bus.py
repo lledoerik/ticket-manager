@@ -1,20 +1,26 @@
 class Bus:
+
     def __init__(self, total_seats):
         self.__total_seats = total_seats
         self.__taken_seats = 0
 
-    def getTotalSeats(self):
+    def get_total_seats(self):
         return self.__total_seats
-    
-    def setTotalSeats(self, total_seats):
+
+    def set_total_seats(self, total_seats):
         self.__total_seats = total_seats
 
-    def getTakenSeats(self):
+    def get_taken_seats(self):
         return self.__taken_seats
-    
-    def setTakenSeats(self, taken_seats):
+
+    def set_taken_seats(self, taken_seats):
         self.__taken_seats = taken_seats
 
-    def estado_venta(self):
-        return f"Asientos totales: {self.getTotalSeats()}, Asientos ocupados: {self.getTakenSeats()}, Asientos disponibles: {self.getTotalSeats() - self.getTakenSeats()}"
-    
+    def sale_tickets(self):
+        pass
+
+    def refound_ticket(self):
+        pass
+
+    def sale_status(self):
+        return f"Asientos totales: {self.get_total_seats()}, Asientos ocupados: {self.get_taken_seats()}, Asientos disponibles: {self.get_total_seats() - self.get_taken_seats()}"

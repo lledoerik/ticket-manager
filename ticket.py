@@ -1,4 +1,5 @@
 class Ticket:
+
     def __init__(self, seat, date, person):
         self.__seat = seat
         self.__date = date
