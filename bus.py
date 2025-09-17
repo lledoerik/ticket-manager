@@ -4,4 +4,4 @@ class Bus:
         self.__taken_seats = taken_seats
 
     def estado_venta(self):
-        return f"Asientos totales: {self.__asientos_totales}, Asientos ocupados: {self.__taken_seats}, Asientos disponibles: {self.__total_seats - self.__taken_seats}"
+        return f"Asientos totales: {self.__total_seats}, Asientos ocupados: {self.__taken_seats}, Asientos disponibles: {self.__total_seats - self.__taken_seats}"
