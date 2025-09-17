@@ -1,9 +1,15 @@
 class Person:
-    dni = None
 
     def __init__(self, name, surname):
+        self.__dni = None
         self.__name = name
         self.__surname = surname
+
+    def set_dni(self, dni):
+        self.__dni = dni
+
+    def get_dni(self):
+        return self.__dni
 
     def set_name(self, name):
         self.__name = name
