@@ -24,4 +24,4 @@ class Person:
         return self.__surname
 
     def __str__(self):
-        return f"Name: {self.__name}\nSurname: {self.__surname}"
+        return f"{self.__name} {self.__surname}"

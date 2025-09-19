@@ -1,21 +1,27 @@
 class Ticket:
-
-    def __init__(self, seat, date, person):
-        self.__seat = seat
+    _id_counter = 1
+    
+    def __init__(self, seats, date, person):
+        self.__id = Ticket._id_counter
+        Ticket._id_counter += 1
+        self.__seats = seats
         self.__date = date
         self.__person = person
 
-    def set_seat(self, seat):
-        self.__seat = seat
+    def get_id(self):
+        return self.__id
 
-    def get_seat (self):
-        return self.__seat
+    def set_seats(self, seats):
+        self.__seats = seats
+
+    def get_seats (self):
+        return self.__seats
 
     def set_date(self, date):
         self.__date = date
 
-    def get_date (self, date):
+    def get_date (self):
         return self.__date
 
     def __str__(self):
-        return f"Seat: {self.__seat}\nDate: {self.__date}\nPerson: {self.__person}"
+        return f"Id Ticket: {self.__id}, seats: {self.__seats}, date: {self.__date}, person: {self.__person}"
